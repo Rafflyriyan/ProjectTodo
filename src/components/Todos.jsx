@@ -1,8 +1,8 @@
 import TodoItem from "./TodoItem";
-const Todos = ({ todosProp }) => {
+const Todos = ({ todos }) => {
   return (
     <div style={styles.container}>
-      {todosProp.map((todo) => {
+      {todos.map((todo) => {
         return <TodoItem key={todo.id} todo={todo} />;
       })}
     </div>

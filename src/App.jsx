@@ -25,7 +25,7 @@ function App() {
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>My Todo List</h1>
-      <Todos todosProp={todos} />
+      <Todos todos={todos} />
     </div>
   );
 }
