@@ -1,9 +1,9 @@
 import TodoItem from "./TodoItem";
-const Todos = ({ todos }) => {
+const Todos = ({ todos, deleteTodo }) => {
   return (
     <div style={styles.container}>
       {todos.map((todo) => {
-        return <TodoItem key={todo.id} todo={todo} />;
+        return <TodoItem key={todo.id} todo={todo} deleteTodo={deleteTodo} />;
       })}
     </div>
   );
