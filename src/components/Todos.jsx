@@ -1,9 +1,16 @@
 import TodoItem from "./TodoItem";
-const Todos = ({ todos, deleteTodo }) => {
+const Todos = ({ todos, toggleCompleted, deleteTodo }) => {
   return (
     <div style={styles.container}>
       {todos.map((todo) => {
-        return <TodoItem key={todo.id} todo={todo} deleteTodo={deleteTodo} />;
+        return (
+          <TodoItem
+            key={todo.id}
+            todo={todo}
+            deleteTodo={deleteTodo}
+            toggleCompleted={toggleCompleted}
+          />
+        );
       })}
     </div>
   );
